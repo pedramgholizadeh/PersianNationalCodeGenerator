@@ -1,0 +1,93 @@
+@font-face {
+    font-family: IRSansX;
+    font-weight: 100;
+    src: url('fonts/IRANSansX-Light.woff2');
+}
+@font-face {
+    font-family: IRSansX;
+    font-weight: 500;
+    src: url('fonts/IRANSansX-Medium.woff2');
+}
+@font-face {
+    font-family: IRSansX;
+    font-weight: 700;
+    src: url('fonts/IRANSansX-Bold.woff2');
+}
+html , body {
+    direction: rtl;
+    text-align: right;
+    width:600px;
+    font-family: 'IRSansX';
+}
+h1 {
+    font-size:20px;
+    font-weight:700;
+}
+
+label , .btn , input[type=text]{
+    font-weight:100;
+}
+
+select , option , button {
+    font-family: 'IRSansX';
+}
+.choose .item {
+    text-align:center;
+    height:70px;
+    line-height:70px;
+    color:black;
+    background: whitesmoke;
+}
+.choose .item:hover {
+    cursor:pointer
+}
+
+.choose .item.active:before {
+    content:"✅";
+    margin-left:5px;
+}
+.choose .item.active.generator {
+    background:linear-gradient(to right top , #186eb3 , #1010a5);
+    color:white;
+}
+.choose .item.active.check {
+    background:linear-gradient(to right top , #1c3d0e , #0b6817);
+    color:white;
+}
+
+.message .error {
+    margin-top:1rem;
+    background:#f41818;
+    padding:0.5rem;
+    color:white;
+    border-right:5px solid #760a0a;
+}
+.message .ok {
+    margin-top:1rem;
+    background:#89aa41;
+    padding:0.5rem;
+    color:white;
+    border-right:5px solid #57603a;
+}
+.footer {
+    margin-bottom:1rem;
+    margin-top:5rem;
+    direction:ltr;
+}
+.footer .d-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.footer img {
+    width:35px !important;
+    height:auto;
+    object-fit:cover;
+    filter:grayscale(1);
+}
+.footer a {
+    color:#676767;
+    text-decoration:none;
+    font-weight:100;
+    
+}

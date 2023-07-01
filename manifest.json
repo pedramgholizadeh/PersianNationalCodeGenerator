@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Persian National Code Generator",
+    "description": "Fake NationalCode Generator",
+    "version": "0.1",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    }
+  }

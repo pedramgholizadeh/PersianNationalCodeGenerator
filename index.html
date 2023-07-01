@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+
+    <div class="container choose">
+        <div class="row title mt-3">
+            <h1>ابزار ساخت و تشخیص اعتبار کد ملی</h1>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <div class="item generator active" data="create">
+                    تولید
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="item check" data="check">
+                    بررسی اعتبار
+                </div>
+            </div>
+        </div>
+
+        <div class="row box generate mt-3 mb-3">
+            <div class="col-12">
+                <label for="city">شهر مورد نظر را انتخاب کنید :</label>
+                <select class="form-control d-block w-100" name="city" id="city">
+                    <option value="tehran">تهران</option>
+                </select>
+                <button class="d-inline btn btn-primary generate mt-2">تولید</button>
+                <button class="d-inline btn btn-danger reset mt-2">ریست</button>
+
+                <input type="text" name="nationalcode" id="nationalcode" class="form-control d-block w-100 mt-2 p-2" placeholder="کد ملی در اینجا تولید خواهد شد" disabled>
+            </div>
+        </div>
+        <div class="row box check mt-3 mb-3">
+            <div class="col-12">
+                <label for="nationalcode">کد ملی مورد نظر را وارد کنید :</label>
+            
+                <input type="text" name="nationalcodeChecker" id="nationalcode" class="form-control d-block w-100 mt-2 p-2" placeholder=" ..... ">
+
+                <button class="d-inline btn btn-primary check mt-2">صحت‌سنجی کد ملی</button>
+                <button class="d-inline btn btn-danger reset mt-2">ریست</button>
+                <div class="message">
+                    <div class="error">خطا : کد ملی وارد شده صحیح نیست</div>
+                    <div class="ok">پیام : کد ملی وارد شده صحیح است</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="d-flex">
+                <img src="twitter.webp" alt="Twitter">
+                <a href="https://twitter.com/pedramgholizade" target="_blank">/PedramGholizade</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Say My Name #P3D -->
+    <script src="assets/jquery.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
