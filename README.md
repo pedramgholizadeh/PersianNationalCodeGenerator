@@ -1,5 +1,5 @@
 
-# Persian National Code Generator
+# Persian National Code Checker/Generator [Chrome Extention]
 
 a simple chrome extention!
 - Generate fake national code 
